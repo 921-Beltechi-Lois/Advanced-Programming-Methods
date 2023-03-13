@@ -1,0 +1,430 @@
+Id: 13
+Execution stack: 
+(int v|(int x|(int y|(repeat (Fork((Print(v)|v = v - 1))|v = v + 1) until v == 3|(x = 1|(NopStatement|(y = 3|(NopStatement|Print(v * 10)))))))))
+Symbol table: 
+Output list: 
+File table:
+Heap memory:
+
+Id: 13
+Execution stack: 
+int v
+(int x|(int y|(repeat (Fork((Print(v)|v = v - 1))|v = v + 1) until v == 3|(x = 1|(NopStatement|(y = 3|(NopStatement|Print(v * 10))))))))
+Symbol table: 
+Output list: 
+File table:
+Heap memory:
+
+Id: 13
+Execution stack: 
+int v
+(int x|(int y|(repeat (Fork((Print(v)|v = v - 1))|v = v + 1) until v == 3|(x = 1|(NopStatement|(y = 3|(NopStatement|Print(v * 10))))))))
+Symbol table: 
+Output list: 
+File table:
+Heap memory:
+
+Id: 13
+Execution stack: 
+(int x|(int y|(repeat (Fork((Print(v)|v = v - 1))|v = v + 1) until v == 3|(x = 1|(NopStatement|(y = 3|(NopStatement|Print(v * 10))))))))
+Symbol table: 
+v -> 0
+Output list: 
+File table:
+Heap memory:
+
+Id: 13
+Execution stack: 
+(int x|(int y|(repeat (Fork((Print(v)|v = v - 1))|v = v + 1) until v == 3|(x = 1|(NopStatement|(y = 3|(NopStatement|Print(v * 10))))))))
+Symbol table: 
+v -> 0
+Output list: 
+File table:
+Heap memory:
+
+Id: 13
+Execution stack: 
+int x
+(int y|(repeat (Fork((Print(v)|v = v - 1))|v = v + 1) until v == 3|(x = 1|(NopStatement|(y = 3|(NopStatement|Print(v * 10)))))))
+Symbol table: 
+v -> 0
+Output list: 
+File table:
+Heap memory:
+
+Id: 13
+Execution stack: 
+int x
+(int y|(repeat (Fork((Print(v)|v = v - 1))|v = v + 1) until v == 3|(x = 1|(NopStatement|(y = 3|(NopStatement|Print(v * 10)))))))
+Symbol table: 
+v -> 0
+Output list: 
+File table:
+Heap memory:
+
+Id: 13
+Execution stack: 
+(int y|(repeat (Fork((Print(v)|v = v - 1))|v = v + 1) until v == 3|(x = 1|(NopStatement|(y = 3|(NopStatement|Print(v * 10)))))))
+Symbol table: 
+v -> 0
+x -> 0
+Output list: 
+File table:
+Heap memory:
+
+Id: 13
+Execution stack: 
+(int y|(repeat (Fork((Print(v)|v = v - 1))|v = v + 1) until v == 3|(x = 1|(NopStatement|(y = 3|(NopStatement|Print(v * 10)))))))
+Symbol table: 
+v -> 0
+x -> 0
+Output list: 
+File table:
+Heap memory:
+
+Id: 13
+Execution stack: 
+int y
+(repeat (Fork((Print(v)|v = v - 1))|v = v + 1) until v == 3|(x = 1|(NopStatement|(y = 3|(NopStatement|Print(v * 10))))))
+Symbol table: 
+v -> 0
+x -> 0
+Output list: 
+File table:
+Heap memory:
+
+Id: 13
+Execution stack: 
+int y
+(repeat (Fork((Print(v)|v = v - 1))|v = v + 1) until v == 3|(x = 1|(NopStatement|(y = 3|(NopStatement|Print(v * 10))))))
+Symbol table: 
+v -> 0
+x -> 0
+Output list: 
+File table:
+Heap memory:
+
+Id: 13
+Execution stack: 
+(repeat (Fork((Print(v)|v = v - 1))|v = v + 1) until v == 3|(x = 1|(NopStatement|(y = 3|(NopStatement|Print(v * 10))))))
+Symbol table: 
+v -> 0
+x -> 0
+y -> 0
+Output list: 
+File table:
+Heap memory:
+
+Id: 13
+Execution stack: 
+(repeat (Fork((Print(v)|v = v - 1))|v = v + 1) until v == 3|(x = 1|(NopStatement|(y = 3|(NopStatement|Print(v * 10))))))
+Symbol table: 
+v -> 0
+x -> 0
+y -> 0
+Output list: 
+File table:
+Heap memory:
+
+Id: 13
+Execution stack: 
+repeat (Fork((Print(v)|v = v - 1))|v = v + 1) until v == 3
+(x = 1|(NopStatement|(y = 3|(NopStatement|Print(v * 10)))))
+Symbol table: 
+v -> 0
+x -> 0
+y -> 0
+Output list: 
+File table:
+Heap memory:
+
+Id: 13
+Execution stack: 
+repeat (Fork((Print(v)|v = v - 1))|v = v + 1) until v == 3
+(x = 1|(NopStatement|(y = 3|(NopStatement|Print(v * 10)))))
+Symbol table: 
+v -> 0
+x -> 0
+y -> 0
+Output list: 
+File table:
+Heap memory:
+
+Id: 13
+Execution stack: 
+((Fork((Print(v)|v = v - 1))|v = v + 1)|while(!(v == 3)){(Fork((Print(v)|v = v - 1))|v = v + 1)})
+(x = 1|(NopStatement|(y = 3|(NopStatement|Print(v * 10)))))
+Symbol table: 
+v -> 0
+x -> 0
+y -> 0
+Output list: 
+File table:
+Heap memory:
+
+Id: 13
+Execution stack: 
+((Fork((Print(v)|v = v - 1))|v = v + 1)|while(!(v == 3)){(Fork((Print(v)|v = v - 1))|v = v + 1)})
+(x = 1|(NopStatement|(y = 3|(NopStatement|Print(v * 10)))))
+Symbol table: 
+v -> 0
+x -> 0
+y -> 0
+Output list: 
+File table:
+Heap memory:
+
+Id: 13
+Execution stack: 
+(Fork((Print(v)|v = v - 1))|v = v + 1)
+while(!(v == 3)){(Fork((Print(v)|v = v - 1))|v = v + 1)}
+(x = 1|(NopStatement|(y = 3|(NopStatement|Print(v * 10)))))
+Symbol table: 
+v -> 0
+x -> 0
+y -> 0
+Output list: 
+File table:
+Heap memory:
+
+Id: 13
+Execution stack: 
+(Fork((Print(v)|v = v - 1))|v = v + 1)
+while(!(v == 3)){(Fork((Print(v)|v = v - 1))|v = v + 1)}
+(x = 1|(NopStatement|(y = 3|(NopStatement|Print(v * 10)))))
+Symbol table: 
+v -> 0
+x -> 0
+y -> 0
+Output list: 
+File table:
+Heap memory:
+
+Id: 13
+Execution stack: 
+Fork((Print(v)|v = v - 1))
+v = v + 1
+while(!(v == 3)){(Fork((Print(v)|v = v - 1))|v = v + 1)}
+(x = 1|(NopStatement|(y = 3|(NopStatement|Print(v * 10)))))
+Symbol table: 
+v -> 0
+x -> 0
+y -> 0
+Output list: 
+File table:
+Heap memory:
+
+Id: 13
+Execution stack: 
+Fork((Print(v)|v = v - 1))
+v = v + 1
+while(!(v == 3)){(Fork((Print(v)|v = v - 1))|v = v + 1)}
+(x = 1|(NopStatement|(y = 3|(NopStatement|Print(v * 10)))))
+Symbol table: 
+v -> 0
+x -> 0
+y -> 0
+Output list: 
+File table:
+Heap memory:
+
+Id: 13
+Execution stack: 
+v = v + 1
+while(!(v == 3)){(Fork((Print(v)|v = v - 1))|v = v + 1)}
+(x = 1|(NopStatement|(y = 3|(NopStatement|Print(v * 10)))))
+Symbol table: 
+v -> 0
+x -> 0
+y -> 0
+Output list: 
+File table:
+Heap memory:
+
+Id: 14
+Execution stack: 
+(Print(v)|v = v - 1)
+Symbol table: 
+v -> 0
+x -> 0
+y -> 0
+Output list: 
+File table:
+Heap memory:
+
+Id: 13
+Execution stack: 
+v = v + 1
+while(!(v == 3)){(Fork((Print(v)|v = v - 1))|v = v + 1)}
+(x = 1|(NopStatement|(y = 3|(NopStatement|Print(v * 10)))))
+Symbol table: 
+v -> 0
+x -> 0
+y -> 0
+Output list: 
+File table:
+Heap memory:
+
+Id: 14
+Execution stack: 
+(Print(v)|v = v - 1)
+Symbol table: 
+v -> 0
+x -> 0
+y -> 0
+Output list: 
+File table:
+Heap memory:
+
+Id: 13
+Execution stack: 
+while(!(v == 3)){(Fork((Print(v)|v = v - 1))|v = v + 1)}
+(x = 1|(NopStatement|(y = 3|(NopStatement|Print(v * 10)))))
+Symbol table: 
+v -> 1
+x -> 0
+y -> 0
+Output list: 
+File table:
+Heap memory:
+
+Id: 14
+Execution stack: 
+Print(v)
+v = v - 1
+Symbol table: 
+v -> 0
+x -> 0
+y -> 0
+Output list: 
+File table:
+Heap memory:
+
+Id: 13
+Execution stack: 
+while(!(v == 3)){(Fork((Print(v)|v = v - 1))|v = v + 1)}
+(x = 1|(NopStatement|(y = 3|(NopStatement|Print(v * 10)))))
+Symbol table: 
+v -> 1
+x -> 0
+y -> 0
+Output list: 
+File table:
+Heap memory:
+
+Id: 14
+Execution stack: 
+Print(v)
+v = v - 1
+Symbol table: 
+v -> 0
+x -> 0
+y -> 0
+Output list: 
+File table:
+Heap memory:
+
+Id: 13
+Execution stack: 
+(Fork((Print(v)|v = v - 1))|v = v + 1)
+while(!(v == 3)){(Fork((Print(v)|v = v - 1))|v = v + 1)}
+(x = 1|(NopStatement|(y = 3|(NopStatement|Print(v * 10)))))
+Symbol table: 
+v -> 1
+x -> 0
+y -> 0
+Output list: 
+0
+File table:
+Heap memory:
+
+Id: 14
+Execution stack: 
+v = v - 1
+Symbol table: 
+v -> 0
+x -> 0
+y -> 0
+Output list: 
+0
+File table:
+Heap memory:
+
+Id: 13
+Execution stack: 
+(Fork((Print(v)|v = v - 1))|v = v + 1)
+while(!(v == 3)){(Fork((Print(v)|v = v - 1))|v = v + 1)}
+(x = 1|(NopStatement|(y = 3|(NopStatement|Print(v * 10)))))
+Symbol table: 
+v -> 1
+x -> 0
+y -> 0
+Output list: 
+0
+File table:
+Heap memory:
+
+Id: 14
+Execution stack: 
+v = v - 1
+Symbol table: 
+v -> 0
+x -> 0
+y -> 0
+Output list: 
+0
+File table:
+Heap memory:
+
+Id: 13
+Execution stack: 
+Fork((Print(v)|v = v - 1))
+v = v + 1
+while(!(v == 3)){(Fork((Print(v)|v = v - 1))|v = v + 1)}
+(x = 1|(NopStatement|(y = 3|(NopStatement|Print(v * 10)))))
+Symbol table: 
+v -> 1
+x -> 0
+y -> 0
+Output list: 
+0
+File table:
+Heap memory:
+
+Id: 14
+Execution stack: 
+Symbol table: 
+v -> -1
+x -> 0
+y -> 0
+Output list: 
+0
+File table:
+Heap memory:
+
+Id: 13
+Execution stack: 
+Fork((Print(v)|v = v - 1))
+v = v + 1
+while(!(v == 3)){(Fork((Print(v)|v = v - 1))|v = v + 1)}
+(x = 1|(NopStatement|(y = 3|(NopStatement|Print(v * 10)))))
+Symbol table: 
+v -> 1
+x -> 0
+y -> 0
+Output list: 
+0
+File table:
+Heap memory:
+
+Id: 14
+Execution stack: 
+Symbol table: 
+v -> -1
+x -> 0
+y -> 0
+Output list: 
+0
+File table:
+Heap memory:
+

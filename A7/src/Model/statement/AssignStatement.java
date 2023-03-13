@@ -1,0 +1,62 @@
+package Model.statement;
+
+import Model.expression.IExpression;
+import Model.programState.ProgramState;
+
+import Model.type.Type;
+import Model.utils.MyIDictionary;
+import Model.utils.MyIStack;
+import Model.value.Value;
+import Exception.InterpreterException;
+
+public class AssignStatement implements IStatement {
+    private final String key; //id
+    private final IExpression expression;
+
+    public AssignStatement(String key, IExpression expression) {
+        this.key = key;
+        this.expression = expression;
+    }
+
+    public String toString(){ return key+"="+ expression.toString();}
+
+    @Override
+    public MyIDictionary<String, Type> typeCheck(MyIDictionary<String, Type> typeEnv) throws InterpreterException {
+        Type typeVar = typeEnv.lookUp(key);
+        Type typeExpr = expression.typeCheck(typeEnv);
+        if (typeVar.equals(typeExpr))
+            return typeEnv;
+        else
+            throw new InterpreterException("Assignment: right hand side and left hand side have different types.");
+    }
+
+    @Override
+    public ProgramState execute(ProgramState state) throws InterpreterException {
+        MyIStack<IStatement> stk=state.getExeStack(); // el
+
+        MyIDictionary<String, Value> symbolTable = state.getSymTable();
+
+        if (symbolTable.isDefined(key)) {
+            Value value = expression.eval(symbolTable,state.getHeap());
+
+            Type typeId = (symbolTable.lookUp(key)).getType();
+            if (value.getType().equals(typeId)) {   //Type Value din SymbolTabel == Type key curente
+                symbolTable.update(key, value);     // Exista deja variabila, update
+            } else {
+                throw new InterpreterException("Declared type of variable " + key + " and type of the assigned expression do not match.");
+            }
+        } else {
+            throw new InterpreterException("The used variable " + key + " was not declared before.");
+        }
+        state.setSymTable(symbolTable);
+        //return state; should return null...
+        return null;
+
+    }
+
+
+    @Override
+    public IStatement deepCopy() {
+        return new AssignStatement(key, expression.deepCopy());
+    }
+}
